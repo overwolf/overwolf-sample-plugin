@@ -24,7 +24,7 @@ The sample plugin exposes the following methods for your WebApp:
 
 As well as a single read-only property:
 
-- sampleProperty which returns the value 42 (a hardcoded value). 
+- sampleProperty which returns the value 42 (this is a hardcoded value). 
 
 
 Sample Overwolf WebApp
