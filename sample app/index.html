@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>Overwolf Sample Plugin App</title>
+  </head>
+  <body>
+
+    <embed  id="plugin" 
+            type="application/x-overwolf-sample-plugin" 
+            width=0px 
+            height=0px>
+    </embed>
+    
+    <h1 id="title"></h1>
+    <hr>
+    <div id="messages"></div>
+
+    <script>
+      navigator.plugins.refresh(true);
+      
+      function plugin() {
+        return document.querySelector('#plugin');
+      }
+      
+      if (plugin() == null) {
+        document.querySelector('#title').innerText = "Plugin couldn't be loaded??";
+        return;
+      } else {
+        document.querySelector('#title').innerText = "Plugin was loaded!";
+      }
+      
+      plugin().echo("Hello Overwolf", function(data) { 
+        var obj = document.createElement("div");
+        obj.innerText = 'Echo response: ' + data;
+        document.querySelector('#messages').appendChild(obj);
+      });
+      
+      plugin().add(5, 1, function(data) { 
+        var obj = document.createElement("div");
+        obj.innerText = '5 + 1 =' + data;
+        document.querySelector('#messages').appendChild(obj);
+      });
+      
+      var obj = document.createElement("div");
+      obj.innerText = 'plugin().sampleProperty = ' + plugin().sampleProperty;
+      document.querySelector('#messages').appendChild(obj);
+      
+    </script>
+
+  </body>
+</html>

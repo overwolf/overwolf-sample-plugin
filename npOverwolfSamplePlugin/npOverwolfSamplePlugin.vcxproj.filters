@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="utils\Thread.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\CriticalSectionLock.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="nsScriptableObjectBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nsScriptableObjectOverwolfSample.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin_common\np_entry.cpp">
+      <Filter>Source Files\plugin_common</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin_common\npn_gate.cpp">
+      <Filter>Source Files\plugin_common</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin_common\npp_gate.cpp">
+      <Filter>Source Files\plugin_common</Filter>
+    </ClCompile>
+    <ClCompile Include="nsPluginInstanceOverwolfSample.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="utils\Thread.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\CriticalSectionLock.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\SingletonClass.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="nsScriptableObjectBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nsScriptableObjectOverwolfSample.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nsPluginInstanceOverwolfSample.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="plugin_common\pluginbase.h">
+      <Filter>Header Files\plugin_common</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{7fcc5e2e-2251-4aaf-8675-0dc67c8a47d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{b55a1809-1652-4c9e-a40c-2dc12d045a48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\plugin_common">
+      <UniqueIdentifier>{c530847d-4240-426d-b84c-b14ed6518d47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\plugin_common">
+      <UniqueIdentifier>{19305149-d8ab-4b33-84c4-cb9a6c60ce18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\utils">
+      <UniqueIdentifier>{7df4945f-1d61-4d84-ba1b-d79d7b78c120}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\utils">
+      <UniqueIdentifier>{a5a8864a-b84f-4f5c-b40e-62fffe4550fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{b659ece1-45d1-4758-9ed2-c0da2a107e9c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="npOverwolfSamplePlugin.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="npOverwolfSamplePlugin.def">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

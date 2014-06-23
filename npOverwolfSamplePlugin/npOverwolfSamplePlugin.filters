@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{5433a360-bb09-42ee-8526-ce2449c6e604}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{f349db16-6a7d-4e70-87d7-1eb54e74cc65}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{bc86bd27-748c-40ae-81a9-039a46110bdc}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Header Files\common">
+      <UniqueIdentifier>{d6acd099-0e0b-4388-94a9-6f6c225e0413}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common">
+      <UniqueIdentifier>{26bcc667-90fe-4a38-b09a-6e283d164ead}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\utils">
+      <UniqueIdentifier>{8e6486c7-b008-4d4a-a0c1-eb13524994fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\utils">
+      <UniqueIdentifier>{75c03860-f367-4676-8a54-57e4b9385ee6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\twitch">
+      <UniqueIdentifier>{b5156248-3cd1-4a8b-8d58-2dc39fdee520}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\twitch">
+      <UniqueIdentifier>{3cdbe005-cdba-4971-b211-bed294a86296}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="plugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\np_entry.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\npp_gate.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\npn_gate.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\Bitmap.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\CriticalSectionLock.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\Event.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\Thread.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\ThreadQueue.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="twitch\TwitchLibrary.cpp">
+      <Filter>Source Files\twitch</Filter>
+    </ClCompile>
+    <ClCompile Include="twitch\TwitchWebCamCapture.cpp">
+      <Filter>Source Files\twitch</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="plugin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\npplat.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\pluginbase.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\npapi.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\npfunctions.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\npruntime.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\nptypes.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\Bitmap.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\CriticalSectionLock.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\Event.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\SingletonClass.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\Thread.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\ThreadQueue.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="twitch\TwitchLibrary.h">
+      <Filter>Header Files\twitch</Filter>
+    </ClInclude>
+    <ClInclude Include="twitch\TwitchWebCamCapture.h">
+      <Filter>Header Files\twitch</Filter>
+    </ClInclude>
+    <ClInclude Include="twitch\TwitchWebCamCaptureDelegate.h">
+      <Filter>Header Files\twitch</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="npOverwolfTwitchHelperPlugin.def">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="npOverwolfTwitchHelperPlugin.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

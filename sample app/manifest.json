@@ -1,0 +1,35 @@
+{
+  "manifest_version":"1",
+  "type":"WebApp",
+  "meta":{
+    "name":"Sample PluginApp",
+    "version":"1.0.0.1",
+    "minimum-overwolf-version": "0.77.4.0",
+    "author":"Overwolf",
+    "icon":"icon.png",
+    "icon_gray":"icon_gray.png",
+    "description":"Sample app for using the sample NPAPI plugin"
+  },
+  "data": {
+    "start_window":"index",
+    "windows":{
+      "index":{
+        "file":"index.html",
+        "transparent":false,
+        "resizable":true,
+        "show_in_taskbar": true,
+        "size": {
+          "width": 600,
+          "height": 300
+        },
+        "start_position": {
+          "Top": 100,
+          "Left": 300
+        }
+      }
+    },
+    "plugins": [
+      "npOverwolfSamplePlugin.dll"
+    ]
+  }
+}
