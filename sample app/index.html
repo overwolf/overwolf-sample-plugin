@@ -14,16 +14,14 @@
     <hr>
     <div id="messages"></div>
 
-    <script>
-      navigator.plugins.refresh(true);
+    <script>      
       
       function plugin() {
         return document.querySelector('#plugin');
       }
       
       if (plugin() == null) {
-        document.querySelector('#title').innerText = "Plugin couldn't be loaded??";
-        return;
+        document.querySelector('#title').innerText = "Plugin couldn't be loaded??";        
       } else {
         document.querySelector('#title').innerText = "Plugin was loaded!";
       }
