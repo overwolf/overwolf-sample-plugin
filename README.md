@@ -1,3 +1,9 @@
+THIS PROJECT IS NOW OBSOLETE PLEASE USE: https://github.com/overwolf/overwolf-plugin-sample instead!
+
+
+
+
+
 Overwolf sample plugin
 ======================
 
